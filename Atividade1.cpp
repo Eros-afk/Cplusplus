@@ -18,6 +18,8 @@ int main() {
     The myth
     */
 
+    // system("COLOR 4E");
+
     std::cout << "Vou\n" 
                 << "Fazer\n"
                 << "Um\n"
