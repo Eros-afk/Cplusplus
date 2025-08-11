@@ -26,6 +26,8 @@ int main(){
     std::cout << "*********INICIO DO JOGO**********" << std::endl;
     std::cout << "Vidas: " << numVidas << std::endl;
     std::cout << "Pontuação: " << pontos << std::endl;
+    std::cout << "Tamanho de numVidas: " << sizeof(numVidas) << " bytes" << std::endl;
+    std::cout << "Tamanho de pontos: " << sizeof(pontos) << " bytes" << std::endl;
     std::cout << "Endereço que numVidas está armazenado: " << &numVidas << std::endl;
     std::cout << "Endereço que pontos está armazenado: " << &pontos << std::endl;
     std::cout << "*******************" << std::endl;
