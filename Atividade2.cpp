@@ -8,4 +8,6 @@ int main() {
     std::cout << "Numero de computadores: " << NumComputadores << std::endl;
     std::cout << "Numero de serie dos computadores: " << SerialComputadores << std::endl;
     std::cout << "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" << std::endl;
+    
+    return 0;
 }

@@ -38,4 +38,6 @@ int main(){
     std::cout << "Vidas: " << numVidas << std::endl;
     std::cout << "Pontuação: " << pontos << std::endl;
     std::cout << "**********************************" << std::endl;
+
+    return 0;
 }
