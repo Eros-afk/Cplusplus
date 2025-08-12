@@ -9,6 +9,8 @@ int main() {
 
     // Exibição dos valores das variáveis
     std::cout << "Idade: " << idade << std::endl;
+    std::cout << "Tamnho da variavel idade: " << sizeof(idade) << " bytes" << std::endl;
+    std::cout << "Endereco da variavel idade: " << &idade << std::endl;
     std::cout << "Altura: " << altura << " metros" << std::endl;
     std::cout << "Genero: " << genero << std::endl;
     std::cout << "Estudante: " << (estudante ? "Sim" : "Nao") << std::endl;
