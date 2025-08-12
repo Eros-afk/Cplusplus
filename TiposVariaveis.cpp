@@ -7,6 +7,7 @@ int main() {
     float altura = 1.75f; // Variável do tipo ponto flutuante
     double peso = 745345.90455555; // Variável do tipo ponto flutuante de precisão dupla
     char genero = 'M'; // Variável do tipo caractere
+    char caracter = '65'; // Variável do tipo caractere
     bool estudante = true; // Variável do tipo booleano
 
     // Exibição dos valores das variáveis
@@ -24,6 +25,10 @@ int main() {
     std::cout << "Endereco da variavel peso: " << &peso << std::endl;
 
     std::cout << "Genero: " << genero << std::endl;
+    std::cout << "Tamanho da variavel genero: " << sizeof(genero) << " bytes" << std::endl;
+    std::cout << "Endereco da variavel genero: " << static_cast<void*>(&genero) << std::endl;
+
+
     std::cout << "Estudante: " << (estudante ? "Sim" : "Nao") << std::endl;
 
     return 0;
