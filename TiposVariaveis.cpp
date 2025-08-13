@@ -38,15 +38,18 @@ int main() {
 
 
     std::cout << "Estudante: " << (estudante ? "Sim" : "Nao") << std::endl;
-    
+
+    //1 é true
     bAchou = 1;
     std::cout << "Variavel bAchou: " << bAchou << std::endl;
+    //0 é false
     bAchou = 0;
     std::cout << "Variavel bAchou apos atribuicao 0: " << bAchou << std::endl;
     bAchou = true;
     std::cout << "Variavel bAchou apos atribuicao true: " << bAchou << std::endl;
     bAchou = false;
     std::cout << "Variavel bAchou apos atribuicao false: " << bAchou << std::endl;
+    //Qualquer coisa diferente de 0 é true ao ser atribuída a uma variável booleana
     bAchou = 'd'; // Atribuição de um caractere
     std::cout << "Variavel bAchou apos atribuicao 'd': " << bAchou << std::endl;
     bAchou = "102340A"; // Atribuição de uma string
