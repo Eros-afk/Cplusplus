@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main(){
-    float Numero1, Numero2, Numero3, Media;
+    float Numero1, Numero2, Numero3, Media{0.0};
     std::cout << "Digite o primeiro numero: ";
     std::cin >> Numero1;
     std::cout << "Digite o segundo numero: ";
