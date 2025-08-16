@@ -14,8 +14,16 @@ int main(){
     //String é um tipo de dado que representa uma sequência de caracteres.
     //No C++, strings são representadas pela classe std::string, que faz parte da biblioteca padrão.
     std::string Texto{"Olá, Mundo!"}; // Inicialização de string com chaves
-    //%d indica que o valor será um inteiro, %f indica que o valor será um float, %c indica que o valor será um caractere e %s indica que o valor será uma string.
-    std::printf ("Número Inteiro: %d Número Real: %.2f", NumeroInteiro, NumeroFloat);
+    /*
+    %d indica que o valor será um inteiro, 
+    %f indica que o valor será um float, 
+    %c indica que o valor será um caractere e 
+    %s indica que o valor será uma string.
+    */
+    std::printf ("Número Inteiro: %d - Número Real: %.2f - Caractere: %c - Texto: %s\n", NumeroInteiro, NumeroFloat, Letra, Texto.c_str());
+    std::cout << "Texto: " << Texto << std::endl;
+
+    std::printf("O valor do Caractere Digitado: %c. Na tabela ASCII é: %d \n", Letra, Letra);
 
     return 0;
 }
