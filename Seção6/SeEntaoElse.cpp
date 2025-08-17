@@ -20,5 +20,20 @@ int main(){
         exit(0);
     }
 
+    //FezSol = CarroPronto = SalarioDepositado = true;
+    FezSol = false;
+    CarroPronto = false;
+    SalarioDepositado = false;
+    
+    if(Acesso){
+        if (FezSol || CarroPronto || SalarioDepositado) {
+            std::cout << "Voce pode sair de casa!" << std::endl;
+        } 
+        else if (!SalarioDepositado) {
+            std::cout << "Nao vai dar para sair, o salário não foi depositado." << std::endl;  
+        }
+        
+    }
+
     return 0;
 }
