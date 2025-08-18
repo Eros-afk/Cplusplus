@@ -29,5 +29,6 @@ int main(){
     std::cout << "Digite o numero a ser somado: ";
     std::cin >> numsomado;
     std::cout << "A soma deste numero: " << num << " + " << numsomado << " e: " << soma(num, numsomado) << std::endl;
+    std::cout << soma(10, 20) << std::endl; //Chama a função soma com valores diretos
     return 0;
 }
