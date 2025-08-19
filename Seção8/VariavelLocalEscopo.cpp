@@ -1,5 +1,10 @@
 #include <iostream>
 
+// Definição da função fora do main
+int soma(int a, int b) {
+    return a + b;
+}
+
 int main(){
     /*
     int x = 10; // Variável local ao main
@@ -23,9 +28,6 @@ int main(){
     //Visibilidade de uma variavel? Local ou global se local em que bloco? Qual o tempo de vida dela?
 
     //Os parametros de uma função são variaveis locais a função
-    int soma(int a, int b){
-        return a + b;
-    }
 
     return 0;
 }
