@@ -1,5 +1,5 @@
 #include <iostream>
-#include <locale.h>
+#include <windows.h>
 #include "FuncoesMenu.h"
 
 //COMO? as funções são declaradas em um arquivo separado, precisamos incluir o cabeçalho deste arquivo para que o compilador saiba que estas funções existem.
@@ -9,8 +9,7 @@
 //a função não retorna nada, logo o tipo de retorno é vazio(void). Além disso a função não possui nenhuma variável local(Parâmetros). Como não retorna nada não precisamos usar comando return
 void ExibirMenu()
 {
-	setlocale(LC_ALL, "portuguese");
-
+    SetConsoleOutputCP(CP_UTF8); // Configura a saída do console para UTF-8
 	do // as instruções abaixo serão executadas pelo menos uma vez!
 	{
 		std::cout << "****Tickets Cinema****" << std::endl;
