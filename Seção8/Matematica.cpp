@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Matematica.h"
 #include <cmath> // Para a função raiz
+#include "Matematica.h"
 
 int soma(int a, int b) {
     return a + b;
