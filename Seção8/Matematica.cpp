@@ -19,7 +19,10 @@ float divisao(int a, int b) {
         std::cerr << "Erro: Divisão por zero!" << std::endl;
         return 0; // ou lançar uma exceção
     }
-    return a / b;
+    // Faz a divisão de dois inteiros e retorna um float
+    // Isso é necessário para evitar a divisão inteira
+    // Faz um cast de a e b para float
+    return (float)a / (float)b;
 }
 
 int potencia(int base, int expoente) {
