@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main(){
-    int *ptr; // Declaração de um ponteiro nulo
+    int *ptr;
     int num = 101;
     ptr = &num; // Atribuição do endereço da variável num ao ponteiro ptr
     *ptr = 202; // Modifica o valor da variável num através do ponteiro ptr
