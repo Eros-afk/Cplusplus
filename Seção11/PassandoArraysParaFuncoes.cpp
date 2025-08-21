@@ -16,7 +16,7 @@ int main(){
 
     //int tamnhoVetor = sizeof(vetor) / sizeof(int);
     //Agora serão 40 bytes / 4 bytes = 10 e teremos o tamanho do vetor!
-    std::cout << "Tamanho Vetor: " << tamanhoVetor << std::endl;
+    std::cout << "Tamanho do Vetor: " << tamanhoVetor << std::endl;
     std::cout << "Tamanho de um float " << sizeof(float) << std::endl;
     std::cout << "Tamanho de um int " << sizeof(int) << std::endl;
 
