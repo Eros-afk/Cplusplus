@@ -26,9 +26,22 @@ int main(){
 
 
 void TrocaNumeros(int* num1, int* num2){
-    std::cout << "Endereço de num1: " << &num1 << std::endl;
-    std::cout << "Endereço de num2: " << &num2 << std::endl;
-    int temp = num1;
-    num1 = num2;
-    num2 = temp;
+    //Deu diferente pois ponteiro é uma variável e portanto possui endereço alocado na memória. Ele possui dentro dele o endereço de memória da variável que ele aponta.
+    std::cout << "Endereço de num1 da função: " << &num1 << std::endl;
+    std::cout << "Endereço de num2 da função: " << &num2 << std::endl;
+    std::cout << "Endereço de memória contido dentro de num1: " << num1 << std::endl;
+    std::cout << "Endereço de memória contido dentro de num2: " << num2 << std::endl;
+    //Se num1 agora é um ponteiro logo terá dentro dele o endereço de memória do número 1.
+    //Nesse caso queremos o valor que num1 aponta e que neste caso será num1. Por isso diferentemente das referências, os ponteiros precisam ser desreferenciados com o operador *.
+    int temp = *num1;
+    //Agora temp recebe o valor apontado por num1.
+
+    //Agora o valor apontado por num1(que será o número 1) recebe o valor apontado por num2(que será o número 2).
+    *num1 = *num2;
+
+    //O valor apontado por num2(que será o número 2) recebe o valor de temp, que é o número 1.
+    *num2 = temp;
+    //temp é uma variável int normal logo nã pode nem precisa ser desreferenciada, pois já é um valor normal.
+
+    //Também chamamos isso de passagem de argumentos por referência, pois estamos passando o endereço de memória dos números, e não os números em si. Usanso ponteiros.
 }
