@@ -1,6 +1,5 @@
 #include <iostream>
 #include <array>
-#include <iterator>
 
 void mostrarVetor(int Array[], int tamanhoVetor);
 
