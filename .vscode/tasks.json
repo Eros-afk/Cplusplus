@@ -3,10 +3,11 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe arquivo de build ativo",
-            "command": "C:/MinGW/bin/gcc.exe",
+            "command": "C:/msys64/ucrt64/bin/g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
+                "-std=c++20",
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
