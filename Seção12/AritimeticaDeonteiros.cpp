@@ -39,5 +39,33 @@ int main(){
     ptr--; //Decrementa e aponta para -78 ou vetor[2]
     std::cout << "Valor do apontado por ptr: " << *ptr << "\n";
 
+    ptr = vetor; //Faz com que o ptr aponte novamente para o início do vetor
+    for (int i = 0; i < 5; i++){
+        std::cout << "Vetor[" << i << "] = " << *(ptr + i) << "\n";
+        //Também pode agora colocar o vetor desta forma usando ponteiros
+        //*(ptr + i) fará o mesmo trabalho contido em *(ptr + 1, +2, +3...)
+    }
+
+    /*Porém pode ser simplificado para ptr[i] = *(ptr + i)*/
+    for(int i = 0; i < 5; i++){
+        std::cout << "Vetor[" << i << "] = " << ptr[i] << "\n";
+    }
+
+    /*
+    Conclusão:
+    Vetor[i] também é o mesmo que *(Vetor + i)
+    Como o nome do vetor é o mesmo que &Vetor[0]
+    *(Vetor + i) é o mesmo que *(&Vetor[0] + i)
+    *(&Vetor[0] + 2) é o mesmo que vetor[2]
+    */
+
+    std::cout << "*(vetor + 2) = " << *(vetor + 2) << " Mesmo que vetor[2] = " << vetor[2] << "\n";
+
+    std::cout << "[ ";
+    for (int i = 0; i < 5; i++){
+        std::cout << *(vetor + i) << " ";
+    }
+    std::cout << " ]";
+
     return 0;
 }
