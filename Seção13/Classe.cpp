@@ -5,8 +5,9 @@ class Casa{
     Serão as características de cada objeto criado a partir desta classe
     Quando o programa estiver sendo executado e queremos saber qual é a situação do objeto em relação ao valor de seus atributos dizemos que queremos saber o ESTADO do objeto*/
     //Por padrão em uma classe a visibilidade é do tipo private
-    private:
+    public:
     //Private: esta indicando que estes atributos só poderão ser acessados dietamente no código da classe Casa
+    //Com public esses atributos estarão acessíveis fora do código da classe
         int numQuartos{4};
         float tamanho{90.0f};
         //No geral coloca b na frente de uma variável bool para identificar que ela é do tipo booleana(bool)
@@ -17,6 +18,7 @@ class Casa{
         void mostrarTamanho();
         int obtenhaNumeroDeQuartos();
         bool temSuite();
+        void setNumQuartos(int num);
 };
 
 int main(){
@@ -27,8 +29,10 @@ int main(){
     //Contudo poderá ser acessado os membros public
     CasaDePraia;
     CasaDePraia.mostrarTamanho();
+    CasaDePraia.setNumQuartos(6);
     std::cout << "\n Num Quartos: " << CasaDePraia.obtenhaNumeroDeQuartos();
     std::cout << "\n Tem Suites: " << CasaDePraia.temSuite() ? std::cout << "Sim" : std::cout << "Não" << std::endl;
+    std::cout << std::endl;
     /*Para acessar os membros da classe Casa usamos neste caso a notação ponto
     NomeDoObjeto.NomeDoAtributo ou NomeDoObjeto.NomeDoMetodo ou função*/
 
@@ -50,4 +54,14 @@ int Casa::obtenhaNumeroDeQuartos()
 bool Casa::temSuite()
 {
     return bTemSuite;
+}
+
+void Casa::setNumQuartos(int num)
+{
+    if (num <= 6 && num >= 0){
+        numQuartos = num;
+    } 
+    else{
+        std::cout << "\nNumero de quartos invalidos\n";
+    }
 }
