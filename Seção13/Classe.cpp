@@ -11,7 +11,7 @@ class Casa{
         int numQuartos{4};
         float tamanho{90.0f};
         //No geral coloca b na frente de uma variável bool para identificar que ela é do tipo booleana(bool)
-        bool bTemSuite{true};
+        bool bTemSuite{false};
         /*Public significa que estará acesível fora do código da classe*/
     public:
         //Estas são as operações da classe, ou métodos ou as funções que o objeto poderá executar quando for criado(instanciado) a partir desta classe.
@@ -30,9 +30,10 @@ int main(){
     CasaDePraia;
     CasaDePraia.mostrarTamanho();
     CasaDePraia.setNumQuartos(6);
-    std::cout << "\n Num Quartos: " << CasaDePraia.obtenhaNumeroDeQuartos();
-    std::cout << "\n Tem Suites: " << CasaDePraia.temSuite() ? std::cout << "Sim" : std::cout << "Não" << std::endl;
-    std::cout << std::endl;
+    std::cout << "\nNum Quartos: " << CasaDePraia.obtenhaNumeroDeQuartos();
+    std::cout << "\nTem Suites: ";
+    CasaDePraia.temSuite() ? std::cout << "Sim" : std::cout << "Nao";
+    std::cout << "\nTem Suites: " << (CasaDePraia.temSuite() ? "Sim" : "Nao");
     /*Para acessar os membros da classe Casa usamos neste caso a notação ponto
     NomeDoObjeto.NomeDoAtributo ou NomeDoObjeto.NomeDoMetodo ou função*/
 
