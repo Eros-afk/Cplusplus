@@ -16,6 +16,11 @@ class Conta{
     /*Indica que os membros podem ser acessados pelo objeto da classe conta fora do código da classe conta*/
     public:
         /*Construtor com parâmetros. Desta forma podemos criar objetos e já enviar argumentos para serem inicializados nos atributos do objeto*/
+        //O construtor padrão ou default é simplesmente um construtor vazio
+        Conta();
+        //Este construtor é criado automaticamente pelo compilador se não criar um construtor para sua classe
+        /*Como criamos um construtor o compilador deixou de criar o construtor e por isso não pode mais criar objetos sem ser através deste construtor abaixo:
+        E ai precisaria enviar argumentos iniciais*/
         Conta(std::string Banco, int Agencia, int NumConta, std::string Titular, double Saldo);
         bool Sacar(double Valor);
         void Depositar(double Valor);

@@ -4,6 +4,17 @@
 #include <windows.h>
 
 //SetConsoleOutputCP(CP_UTF8);
+/*Pode usar o construtor padrão para ja iniciar os atributos do objeto
+Com algum valor padrão e evitar lixo de memória*/
+Conta::Conta(){
+    //Aqui o this está implícito
+    //Seria o mesmo que this->Banco
+    Banco = "";
+    Agencia = 0;
+    NumConta = 0;
+    Titular = "";
+    Saldo = 0.0;
+}
 
 Conta::Conta(std::string Banco, int Agencia, int NumConta, std::string Titular, double Saldo)
 {

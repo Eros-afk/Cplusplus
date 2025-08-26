@@ -7,8 +7,12 @@ int main(){
     SetConsoleOutputCP(CP_UTF8);
 
     //Criamos um objeto CC1 e CC2 do tipo Conta. Está alocado na Stack
-    Conta ContaCliente01;
+
+    /*Dessa forma o objeto seria criado com o construtor automático (Padrão/Default)*/
+    Conta ContaCliente01("Itau", 2222, 5555, "Adam", 100000);
+    //Funciona pois temos os argumentos para o construtor
     Conta ContaCliente02;
+    //Erro desaparece pois temos o construtor vazio
     /*Os objetos foram criados(instanciados) e colocados na memória RAM*/
 
     std::cout << "Endereço de Memória Objeto ContaCliente01: " << &ContaCliente01 << "\n";
