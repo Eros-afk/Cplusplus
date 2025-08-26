@@ -14,7 +14,7 @@ bool Conta::Sacar(double Valor){
     }
     else{
     Saldo = Saldo - Valor;
-    std::cout << "\nSaldo atual: R$" << ConsultarSaldo() << "\n";
+    std::cout << "Saldo atual: R$" << ConsultarSaldo() << "\n";
     return true;
     }
 }
@@ -27,7 +27,7 @@ void Conta::Depositar(double Valor){
 
 /*A função recebe como argumentos para seus parâmetros um Objeto do tipo Canta e um valor double*/
 //Aqui o parâmetro Destino irá receber este objeto
-void Conta::Transferir(Conta Destino, double Valor){
+void Conta::Transferir(Conta &Destino, double Valor){
     if (Saldo < Valor){
         std::cout << "Saldo insuficiente";
     }

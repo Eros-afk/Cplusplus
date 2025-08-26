@@ -17,9 +17,11 @@ class Conta{
     public:
         bool Sacar(double Valor);
         void Depositar(double Valor);
-        /*Neste caso o parâmetro Destino recebe apenas uma cópia do valor do objeto. Ele não tem como alterar o objeto pois só recebeu uma cópia dele
-        Logo podemos usar o conceito de referência para passar a referência do objeto e com isso */
-        void Transferir(Conta Destino, double Valor);
+        /*
+        Neste caso o parâmetro Destino recebe apenas uma cópia do valor do objeto. Ele não tem como alterar o objeto pois só recebeu uma cópia dele
+        Logo podemos usar o conceito de referência para passar a referência do objeto e com isso Destino poderá alterar este objeto pois será realizada uma passagem de argumentos por Referência e não mais por valor
+        */
+        void Transferir(Conta &Destino, double Valor);
         double ConsultarSaldo();
         std::string GetBanco();
         int GetAgencia();
