@@ -9,8 +9,15 @@ int main(){
     //Criamos um objeto CC1 e CC2 do tipo Conta. Está alocado na Stack
     Conta ContaCliente01;
     Conta ContaCliente02;
+    /*Os objetos foram criados(instanciados) e colocados na memória RAM*/
+
+    std::cout << "Endereço de Memória Objeto ContaCliente01: " << &ContaCliente01 << "\n";
+    ContaCliente01.GetEnderecoThis();
+    std::cout << "Endereço de Memória Objeto ContaCliente02: " << &ContaCliente02 << "\n";
+    ContaCliente02.GetEnderecoThis();
 
     ContaCliente01.SetBanco("Banco do Brasil");
+    /*A string "Banco do Brasil foi enviada como argumento para a função SetBanco"*/
     ContaCliente01.SetAgencia(2020);
     ContaCliente01.SetNumConta(1122);
     ContaCliente01.SetTitular("Agler");

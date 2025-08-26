@@ -12,9 +12,11 @@ class Conta{
         int Agencia;
         int NumConta;
         std::string Titular;
-        double Saldo{0.0};
+        double Saldo;
     /*Indica que os membros podem ser acessados pelo objeto da classe conta fora do código da classe conta*/
     public:
+        /*Construtor com parâmetros. Desta forma podemos criar objetos e já enviar argumentos para serem inicializados nos atributos do objeto*/
+        Conta(std::string Banco, int Agencia, int NumConta, std::string Titular, double Saldo);
         bool Sacar(double Valor);
         void Depositar(double Valor);
         /*
@@ -27,8 +29,9 @@ class Conta{
         int GetAgencia();
         int GetNumConta();
         std::string GetTitular();
+        void GetEnderecoThis();
         void SetBanco(std::string Banco);
         void SetAgencia(int Agencia);
-        void SetTitular(std::string GetTitular);
+        void SetTitular(std::string Titular);
         void SetNumConta(int NumConta);
 };
