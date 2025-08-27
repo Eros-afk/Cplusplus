@@ -14,6 +14,7 @@ Conta::Conta(){
     NumConta = 0;
     Titular = "";
     Saldo = 0.0;
+    std::cout << "\nConstrutor Objeto Endereco: " << this << " executado!\n";
 }
 
 Conta::Conta(std::string Banco, int Agencia, int NumConta, std::string Titular, double Saldo)
@@ -23,6 +24,12 @@ Conta::Conta(std::string Banco, int Agencia, int NumConta, std::string Titular, 
     this->NumConta = NumConta;
     this->Titular = Titular;
     this->Saldo = Saldo;
+    std::cout << "\nConstrutor Objeto Endereco: " << this << " executado!\n";
+}
+
+Conta::~Conta()
+{
+    std::cout << "\nDestrutor Objeto Endereco: " << this << " executado!\n";
 }
 
 /*O operador :: está indicando que o metodo sacar pertence a classe Conta e que esse código a seguir vai implementar a função Sacar*/

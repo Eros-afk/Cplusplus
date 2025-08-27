@@ -4,10 +4,11 @@
 #include <windows.h>
 
 int main(){
+    {
     SetConsoleOutputCP(CP_UTF8);
 
     //Criamos um objeto CC1 e CC2 do tipo Conta. Está alocado na Stack
-
+    Conta Cliente00;
     /*Dessa forma o objeto seria criado com o construtor automático (Padrão/Default)*/
     Conta ContaCliente01("Itau", 2222, 5555, "Adam", 100000);
     //Funciona pois temos os argumentos para o construtor
@@ -40,5 +41,6 @@ int main(){
     ContaCliente02.Sacar(500);
     ContaCliente02.Sacar(5000);
 
+    }
     return 0;
 }

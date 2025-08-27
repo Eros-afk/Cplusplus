@@ -22,6 +22,7 @@ class Conta{
         /*Como criamos um construtor o compilador deixou de criar o construtor e por isso não pode mais criar objetos sem ser através deste construtor abaixo:
         E ai precisaria enviar argumentos iniciais*/
         Conta(std::string Banco, int Agencia, int NumConta, std::string Titular, double Saldo);
+        ~Conta();
         bool Sacar(double Valor);
         void Depositar(double Valor);
         /*
