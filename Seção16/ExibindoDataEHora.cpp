@@ -10,7 +10,11 @@ int main(){
     std::cout << "Hora: " << MinhaHora->tm_hour << " : " << MinhaHora->tm_min << " : " << MinhaHora->tm_sec << "\n";
 
     std::cout << "Dia: " << MinhaHora->tm_mday << "\n"; 
-    std::cout << "Mes: " << MinhaHora->tm_mon << "\n";
+    std::cout << "Mes: " << 1+MinhaHora->tm_mon << "\n";
     std::cout << "Ano: " << 1900 + MinhaHora->tm_year << "\n";
     std::cout << ctime(&HoraAtual);
+    std::cout << "\n";
+    //system("DATE");
+    //system("TIME");
+    std::cout << "Segundos desde 1 de janeiro de 1970: " << HoraAtual << "\n";
 }
