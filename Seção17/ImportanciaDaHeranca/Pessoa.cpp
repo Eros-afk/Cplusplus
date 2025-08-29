@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Pessoa.h"
 
 void Pessoa::AcessarSistema()
