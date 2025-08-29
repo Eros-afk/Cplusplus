@@ -6,4 +6,5 @@ class Bibliotecario:public Pessoa{
     Bibliotecario(){}
     Bibliotecario(std::string NovoNome, int NovoCPF, int NovaMatricula) : Pessoa(NovoNome, NovoCPF, NovaMatricula){}
     void CadastrarLivros();
+    void MostrarDados();
 };
